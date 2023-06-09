@@ -1,4 +1,4 @@
-package com.epileftro.market.persistency.entity;
+package com.epileftro.market.persistence.entity;
 
 import jakarta.persistence.*;
 
@@ -21,6 +21,10 @@ public class ComprasProducto {
     @ManyToOne
     @JoinColumn(name = "id_producto", insertable = false, updatable = false)
     private Producto producto;
+
+    public ComprasProductoPK getId() {
+        return id;
+    }
 
     public Integer getCantidad() {
         return cantidad;

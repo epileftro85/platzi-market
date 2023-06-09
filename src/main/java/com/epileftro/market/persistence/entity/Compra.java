@@ -1,8 +1,7 @@
-package com.epileftro.market.persistency.entity;
+package com.epileftro.market.persistence.entity;
 
 import jakarta.persistence.*;
 
-import java.security.PrivateKey;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -10,8 +9,8 @@ import java.util.List;
 @Table(name = "compras")
 public class Compra {
     @Id
-    @Column(name = "id_compra")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_compra")
     private Integer idCompra;
 
     @Column(name = "id_cliente")

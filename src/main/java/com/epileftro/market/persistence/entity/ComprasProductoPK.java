@@ -1,4 +1,4 @@
-package com.epileftro.market.persistency.entity;
+package com.epileftro.market.persistence.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
